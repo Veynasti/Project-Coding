@@ -391,6 +391,7 @@ def isi_saldo():
 
 def cek_harga():
     os.system('cls')
+    
     data = pd.read_csv('csv/dataMitra.csv')
     data.index = range(1, len(data)+1) 
     print(tabulate(data,headers='keys',tablefmt='grid'))
